@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Decoder from './views/Decoder.vue'
+import BaseDecoder from '@/components/baseDecoder.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -16,7 +17,12 @@ export default new Router({
     {
       path: '/decoder',
       name: 'decoder',
-      component:Decoder
+      component:Decoder,
+    },
+    {
+      path:'/baseDecoder',
+      name:'baseDecoder',
+      component:BaseDecoder
     },
     {
       path: '/about',
